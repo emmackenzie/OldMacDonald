@@ -1,4 +1,21 @@
-class Cow //implements Animal 
+class Cow implements Animal 
 {     
-     //your code here
+    String mySound; 
+    String myType;
+
+    public Cow() 
+    {
+    	mySound = "moo";
+    	myType = "cow";
+    } 
+
+    public String getSound()
+    {
+    	return(mySound);
+    }
+
+    public String getType()
+    {
+    	return(myType);
+    }
 }
