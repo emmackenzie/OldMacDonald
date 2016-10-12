@@ -1,12 +1,18 @@
 class Cow implements Animal 
 {     
-    String mySound; 
-    String myType;
+    private String mySound; 
+    private String myType;
+
+    public Cow(String type, String sound)
+    {
+        myType = type;
+        mySound = sound;
+    }
 
     public Cow() 
     {
-    	mySound = "moo";
-    	myType = "cow";
+    	myType = "";
+        mySound = "";	
     } 
 
     public String getSound()
